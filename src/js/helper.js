@@ -1,3 +1,8 @@
+//////////////////////////////////////////////////////////////////////////////////
+//Pequeños helpers como: getJSON() --> fetch con manejo de errores              //
+//timeout() --> para abortar si una peticion tarda                              //
+//////////////////////////////////////////////////////////////////////////////////
+
 import { TIMEOUT_SEC } from './config.js';
 
 // Si el fetch tarda más de TIMEOUT_SEC segundos, rechaza la promesa

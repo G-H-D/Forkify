@@ -1,6 +1,13 @@
-import { API_URL } from './config.js';
-import { getJSON } from './helper.js';
-import { RES_PER_PAGE } from './config.js';
+////////////////////////////////////////////////////////////////////////////////////////////////
+//Es el almacen de datos (state).                                                             //
+//Guarda: receta actual, resultados de busqueda, bookmarks y, configuracion                   // 
+//Contiene funciones que fetch --> obtiene datos de la API, transforman los datos, los guardan//
+//en state y, gestionan persistencia en localStorage                                          //
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+import { API_URL } from './config.js'; 
+import { getJSON } from './helper.js'; //importa la funcion getJSON()
+import { RES_PER_PAGE } from './config.js'; //importa cuantos resultados mostrar por pagina
 
 export const state = {
   recipe: {},
